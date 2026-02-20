@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Harmanpreet Singh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#0ea5e9', secondary: '#10b981', dark: '#0f172a' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; overflow-x: hidden; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(to right, #0ea5e9, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="antialiased">
+
+<nav class="fixed w-full z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
+                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo" class="h-10 w-10 rounded-full"></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="project.html"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="about.html"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-12 relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary rounded-full mix-blend-multiply filter blur-[120px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">My <span class="gradient-text">Work</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">A deep dive into my full-stack web development and data analytics projects, showcasing scalable architecture and real-world problem solving.</p>
+        </div>
+    </section>
+
+    <section class="pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
+                        <i class="fas fa-wallet text-6xl text-primary group-hover:scale-125 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold">Stash Finance Tracker</h3>
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-primary border border-gray-700">Next.js</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">A scalable personal finance tracking application built entirely on the Next.js framework. Features custom middleware routing for secure authentication, dynamic data visualization, and an intuitive dashboard for managing expenses and budgets.</p>
+                        <div class="flex gap-4 border-t border-gray-700 pt-6">
+                            <a href="#" class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i class="fab fa-github mr-2"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
+                        <i class="fas fa-user-md text-6xl text-secondary group-hover:scale-125 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold">Medicura</h3>
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-secondary border border-gray-700">MERN Stack</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">A comprehensive medical appointment booking platform bridging the gap between healthcare providers and patients. Built using MongoDB, Express.js, React, and Node.js, ensuring secure data handling and real-time scheduling capabilities.</p>
+                        <div class="flex gap-4 border-t border-gray-700 pt-6">
+                            <a href="#" class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i class="fab fa-github mr-2"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
+                        <i class="fas fa-globe text-6xl text-purple-400 group-hover:scale-125 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold">Personal Portfolio</h3>
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-purple-400 border border-gray-700">HTML/Tailwind</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">A visually stunning, highly interactive personal portfolio website designed to showcase my journey as a developer. Built with HTML, Tailwind CSS, and custom JavaScript animations. Optimized for deployment on GitHub Pages.</p>
+                        <div class="flex gap-4 border-t border-gray-700 pt-6">
+                            <a href="#" class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i class="fab fa-github mr-2"></i> Source Code</a>
+                            <a href="#" class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
+                        <i class="fas fa-chart-network text-6xl text-blue-400 group-hover:scale-125 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold">Predictive Analytics Engine</h3>
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-blue-400 border border-gray-700">Python / ML</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Developed during my training to bridge software development with data science. This project applies data mining concepts (normalization, discretization) to clean raw datasets and trains predictive models to extract actionable insights.</p>
+                        <div class="flex gap-4 border-t border-gray-700 pt-6">
+                            <a href="#" class="text-blue-400 hover:text-white transition-colors font-semibold flex items-center"><i class="fas fa-lock mr-2"></i> Internal Project</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800 });
+    </script>
+</body>
+</html>
