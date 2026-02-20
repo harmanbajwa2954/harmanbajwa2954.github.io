@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmanpreet Singh | Full Stack & AI Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
 
     <nav class="fixed w-full z-50 glass transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+            <div class="flex items-center justify-around h-20">
                 <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
                     <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo" class="h-10 w-10 rounded-full"></a>
                 </div>
@@ -89,11 +89,11 @@
                 </p>
                 <div class="flex gap-4">
                     <a href="#projects"
-                        class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
+                        class="bg-primary border border-blue-600 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
                         View Work
                     </a>
                     <a href="#contact"
-                        class="border border-gray-500 hover:border-white text-white font-bold py-3 px-8 rounded-full transition-all">
+                        class="bg-primary border border-blue-600 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
                         Let's Talk
                     </a>
                 </div>
@@ -244,7 +244,7 @@
                     <textarea name="message" placeholder="Your Message" rows="4" required
                         class="w-full bg-gray-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary border border-gray-700"></textarea>
                     <button type="submit"
-                        class="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
+                        class="w-full bg-gradient-to-r from-blue-400 to-violet-500 cursor-pointer hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
                         Send Message <i class="fas fa-paper-plane ml-2"></i>
                     </button>
                 </form>
