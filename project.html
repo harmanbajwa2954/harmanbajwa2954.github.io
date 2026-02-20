@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style type="text/tailwindcss">
-      @theme {
+        @theme {
         --color-primary: #0ea5e9;
         --color-secondary: #10b981;
         --color-dark: #0f172a;
@@ -17,18 +18,35 @@
       }
     </style>
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; overflow-x: hidden; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(to right, #0ea5e9, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #0ea5e9, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
+
 <body class="antialiased">
 
-<nav class="fixed w-full z-50 glass transition-all duration-300">
+    <nav class="fixed w-full z-50 glass transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-around h-20">
                 <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
-                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo" class="h-10 w-10 rounded-full"></a>
+                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo"
+                            class="h-10 w-10 rounded-full"></a>
                 </div>
                 <div class="block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -46,98 +64,213 @@
 
     <section class="pt-32 pb-12 relative overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-10">
-            <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary rounded-full mix-blend-multiply filter blur-[120px]"></div>
+            <div
+                class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary rounded-full mix-blend-multiply filter blur-[120px]">
+            </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">My <span class="gradient-text">Work</span></h1>
-            <p class="text-gray-400 max-w-2xl mx-auto text-lg">A deep dive into my full-stack web development and data analytics projects, showcasing scalable architecture and real-world problem solving.</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">My <span class="gradient-text">Projects</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">A deep dive into my full-stack web development python and
+                machine learning
+                projects, showcasing scalable architecture and real-world problem solving.</p>
         </div>
     </section>
 
     <section class="pb-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-10">
-                
-                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-wallet text-6xl text-primary group-hover:scale-125 transition-transform duration-500"></i>
+                        <img src="assets/stash.png" alt="stash finance tracker screenshot"
+                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="text-2xl font-bold">Stash Finance Tracker</h3>
                             <div class="flex gap-2">
-                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-primary border border-gray-700">Next.js</span>
+                                <span
+                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-primary border border-gray-700">Next.js</span>
                             </div>
                         </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A scalable personal finance tracking application built entirely on the Next.js framework. Features custom middleware routing for secure authentication, dynamic data visualization, and an intuitive dashboard for managing expenses and budgets.</p>
+                        <p class="text-gray-400 mb-6 leading-relaxed">A scalable personal finance tracking application
+                            built entirely on the Next.js framework. Features custom middleware routing for secure
+                            authentication, dynamic data visualization, and an intuitive dashboard for managing expenses
+                            and budgets.</p>
                         <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="#" class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i class="fab fa-github mr-2"></i> GitHub Repo</a>
+                            <a href="#"
+                                class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
+
+                            <a href="https://stash-sage.vercel.app/" target="_blank"
+                                class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="200">
+                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
+                    data-aos="fade-up" data-aos-delay="200">
                     <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-user-md text-6xl text-secondary group-hover:scale-125 transition-transform duration-500"></i>
+                        <img src="assets/medicura.png"
+                            alt="    medicura medical appointment booking platform screenshot"
+                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="text-2xl font-bold">Medicura</h3>
                             <div class="flex gap-2">
-                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-secondary border border-gray-700">MERN Stack</span>
+                                <span
+                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-secondary border border-gray-700">MERN
+                                    Stack</span>
                             </div>
                         </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A comprehensive medical appointment booking platform bridging the gap between healthcare providers and patients. Built using MongoDB, Express.js, React, and Node.js, ensuring secure data handling and real-time scheduling capabilities.</p>
+                        <p class="text-gray-400 mb-6 leading-relaxed">A comprehensive medical appointment booking
+                            platform bridging the gap between healthcare providers and patients. Built using MongoDB,
+                            Express.js, React, and Node.js, ensuring secure data handling and real-time scheduling
+                            capabilities.</p>
                         <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="#" class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i class="fab fa-github mr-2"></i> GitHub Repo</a>
+                            <a href="https://github.com/harmanbajwa2954/medicura-appointment-booking.git"
+                                target="_blank"
+                                class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
+                            <a href="https://medicura-appointment-booking.onrender.com" target="_blank"
+                                class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="300">
+                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
+                    data-aos="fade-up" data-aos-delay="300">
                     <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-globe text-6xl text-purple-400 group-hover:scale-125 transition-transform duration-500"></i>
+                        <img src="assets/pristine.png" alt="    pristinizer data cleaning library screenshot"
+                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Personal Portfolio</h3>
+                            <h3 class="text-2xl font-bold">Pristinizer - Library</h3>
                             <div class="flex gap-2">
-                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-purple-400 border border-gray-700">HTML/Tailwind</span>
+                                <span
+                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-purple-400 border border-gray-700">Python|Pandas</span>
                             </div>
                         </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A visually stunning, highly interactive personal portfolio website designed to showcase my journey as a developer. Built with HTML, Tailwind CSS, and custom JavaScript animations. Optimized for deployment on GitHub Pages.</p>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Pristinizer is a lightweight Python package for
+                            automatic data cleaning, exploratory data analysis (EDA), and missing data visualization for
+                            pandas DataFrames.</p>
                         <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="#" class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i class="fab fa-github mr-2"></i> Source Code</a>
-                            <a href="#" class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
+                            <a href="https://github.com/harmanbajwa2954/Pristinizer-pyProject.git" target="_blank"
+                                class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fab fa-github mr-2"></i> Source Code</a>
+                            <a href="https://pypi.org/project/pristinizer/" target="_blank"
+                                class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas far fa-file-alt mr-2"></i> Documentation</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="glass rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-500" data-aos="fade-up" data-aos-delay="400">
+                <div class="glass rounded-2xl overflow-hidden group transition-transform duration-500"
+                    data-aos="fade-up" data-aos-delay="400">
                     <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-chart-network text-6xl text-blue-400 group-hover:scale-125 transition-transform duration-500"></i>
+                        <img src="assets/rainfall.jpeg" alt="rainfall prediction model screenshot"
+                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Predictive Analytics Engine</h3>
+                            <h3 class="text-2xl font-bold">Rainfall Prediction Model</h3>
                             <div class="flex gap-2">
-                                <span class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-blue-400 border border-gray-700">Python / ML</span>
+                                <span
+                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-yellow-400 border border-gray-700">Python
+                                    / ML</span>
                             </div>
                         </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">Developed during my training to bridge software development with data science. This project applies data mining concepts (normalization, discretization) to clean raw datasets and trains predictive models to extract actionable insights.</p>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Trained a Machine Learning Model that predicts the
+                            Rainfall on the basis of current weather conditions. The model uses Random Forest Classifier
+                            demonstrating strong predictive capabilities.</ </p>
                         <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="#" class="text-blue-400 hover:text-white transition-colors font-semibold flex items-center"><i class="fas fa-lock mr-2"></i> Internal Project</a>
+                            <a href="https://github.com/harmanbajwa2954/Rainfall-Prediction-Model.git" target="_blank"
+                                class="text-yellow-400 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fab fa-github mr-2"></i> Source Code</a>
                         </div>
                     </div>
                 </div>
+                <div class="glass rounded-2xl overflow-hidden group transition-transform duration-500"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-01 112732.png"
+                            alt=" campus connect department management system screenshot"
+                            class="object-fill h-full w-full group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold">Campus-Connect</h3>
+                            <div class="flex gap-2">
+                                <span
+                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-pink-400 border border-gray-700">Flutter</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">A Flutter-based Department Management System
+                            designed for colleges or universities to streamline academic administration for teachers,
+                            students, and HODs. It leverages Firebase for real-time data handling, authentication, and
+                            storage.</ </p>
+                        <div class="flex gap-4 border-t border-gray-700 pt-6">
+                            <a href="https://github.com/harmanbajwa2954/CampusConnect-Department-Management-.git"
+                                target="_blank"
+                                class="text-pink-400 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fab fa-github mr-2"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl overflow-hidden group transition-transform duration-500"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
+                        <img src="assets/spotify.png"
+                            alt=" campus connect department management system screenshot"
+                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold">Spotify Clone</h3>
+                            <div class="flex gap-2">
+                                <span
+                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-violet-500 border border-gray-700">HTML/CSS/JS</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">This is Spotify Clone made using HTML, CSS, and Javascript only, that also plays music. This project was made purely for practice of UI/UX designing and Javascript functionalities. The Clone is hosted on GitHub Pages.</ </p>
+                        <div class="flex gap-4 border-t border-gray-700 pt-6">
+                            <a href="https://github.com/harmanbajwa2954/Spotify-Clone.git"
+                                target="_blank"
+                                class="text-violet-500 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fab fa-github mr-2"></i> Source Code</a>
+                            <a href="https://harmanbajwa2954.github.io/Spotify-Clone/" target="_blank"
+                                class="text-violet-500 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
     </section>
+
+    <footer class="py-8 border-t border-gray-800 text-center text-gray-400">
+        <div class="flex justify-center space-x-6 mb-4 text-3xl">
+            <a target="_blank" href="https://github.com/harmanbajwa2954" class="hover:text-white transition-colors"><i
+                    class="fab fa-github"></i></a>
+            <a target="_blank" href="https://linkedin.com/in/harmanpreetsingh2005"
+                class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://instagram.com/_harman__bajwa_"
+                class="hover:text-pink-500 transition-colors"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2026 Harmanpreet Singh. All rights reserved.</p>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ once: true, offset: 50, duration: 800 });
     </script>
 </body>
+
 </html>

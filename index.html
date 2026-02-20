@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style type="text/tailwindcss">
-      @theme {
+        @theme {
         --color-primary: #0ea5e9;
         --color-secondary: #10b981;
         --color-dark: #0f172a;
@@ -45,7 +45,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
-                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo" class="h-10 w-10 rounded-full"></a>
+                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo"
+                            class="h-10 w-10 rounded-full"></a>
                 </div>
                 <div class="block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -87,17 +88,32 @@
                 </p>
                 <div class="flex gap-4">
                     <a href="#projects"
-                        class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
+                        class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg shadow-blue-500/30">
                         View Work
                     </a>
-                    <a href="#contact"
-                        class="border border-gray-500 hover:border-white text-white font-bold py-3 px-8 rounded-full transition-all">
-                        Let's Talk
+                    <a href="https://drive.google.com/file/d/1x4f4vtxRbOEPmLEyfEwMI8T7xxjXaZIJ/view?usp=sharing"
+                        target="_blank"
+                        class="bg-gray-800 hover:bg-gray-700 text-white py-3 px-6 rounded-lg transition-colors border border-gray-600 flex items-center">
+                        <i class="fas fa-download mr-2"></i> Download Resume
                     </a>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" class="hidden md:flex justify-center">
-                <img src="assets/1770140519138.jpg" alt="Harmanpreet Singh" class="w-80 h-80 object-cover rounded-full shadow-[0_0_40px_rgba(14,165,233,0.3)] border-4 border-gray-800 transform hover:scale-105 transition-transform duration-500">
+
+            <!-- profile picture -->
+            <div data-aos="fade-left" data-aos-duration="1000"
+                class="hidden md:flex justify-center items-center relative w-96 h-96 mx-auto">
+                <div
+                    class="absolute inset-0 rounded-full border-y-4 border-primary border-dashed animate-[spin_10s_linear_infinite] opacity-70">
+                </div>
+                <div
+                    class="absolute inset-4 rounded-full border-x-4 border-secondary animate-[spin_7s_linear_infinite_reverse] opacity-70">
+                </div>
+                <div
+                    class="absolute inset-10 rounded-full bg-gradient-to-tr from-primary to-secondary blur-2xl opacity-20 animate-pulse">
+                </div>
+                <img src="assets/1770140519138.jpg" alt="Harmanpreet Singh"
+                    class="relative z-10 w-80 h-80 object-cover rounded-full shadow-[0_0_20px_rgba(14,165,233,0.5)] border-4 border-[#0f172a] transform hover:scale-105 transition-transform duration-500">
+
             </div>
         </div>
     </section>
@@ -113,8 +129,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative overflow-hidden h-48">
-                        <img src="assets/stash.png"
-                            alt="Finance Dashboard"
+                        <img src="assets/stash.png" alt="Finance Dashboard"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-6">
@@ -125,15 +140,18 @@
                         </div>
                         <p class="text-gray-400 mb-4 text-sm">A comprehensive personal finance tracker built with
                             Next.js, featuring secure middleware routing and interactive data visualization.</p>
-                        <a href="#" class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
+                        <a href="" target="_blank"
+                            class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
                                 class="fab fa-github mr-2"></i>View Source</a>
+                                <a href="https://stash-sage.vercel.app/" target="_blank"
+                                class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
                     </div>
                 </div>
 
                 <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative overflow-hidden h-48">
-                        <img src="assets/medicura.png"
-                            alt="Medical App"
+                        <img src="assets/medicura.png" alt="Medical App"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-6">
@@ -144,35 +162,43 @@
                         </div>
                         <p class="text-gray-400 mb-4 text-sm">A full-stack medical appointment booking website bridging
                             patients with healthcare providers securely and efficiently.</p>
-                        <a href="https://github.com/harmanbajwa2954/medicura-appointment-booking.git" class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
+                        <a href="https://github.com/harmanbajwa2954/medicura-appointment-booking.git" target="_blank"
+                            class="text-secondary hover:text-white transition-colors text-sm font-semibold"><i
                                 class="fab fa-github mr-2"></i>View Source</a>
+                                <a href="https://medicura-appointment-booking.onrender.com" target="_blank"
+                                class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
                     </div>
                 </div>
 
                 <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative overflow-hidden h-48">
-                        <img src="assets/pristine.png"
-                            alt="python library"
+                        <img src="assets/pristine.png" alt="python library"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-3">
                             <h3 class="text-xl font-bold">Pristinizer - Python</h3>
-                            <span class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-purple-400">Python/Pandas</span>
+                            <span
+                                class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-purple-400">Python/Pandas</span>
                         </div>
                         <p class="text-gray-400 mb-4 text-sm">A predictive analytics engine leveraging data mining
                             techniques to identify patterns and provide actionable business insights.</p>
-                        <a href="#" class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
+                        <a href="https://github.com/harmanbajwa2954/Pristinizer-pyProject.git" target="_blank"
+                            class="text-purple-400 hover:text-white transition-colors text-sm font-semibold"><i
                                 class="fab fa-github mr-2"></i>View Source</a>
+                                <a href="https://pypi.org/project/pristinizer/" target="_blank"
+                                class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i
+                                    class="fas far fa-file-alt mr-2"></i> Documentation</a>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
-                    <a href="project.html"
-                        class="mt-12 inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-full transition-opacity">
-                        View All Projects <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
+                <a href="project.html"
+                    class="mt-12 inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -258,12 +284,12 @@
 
     <footer class="py-8 border-t border-gray-800 text-center text-gray-400">
         <div class="flex justify-center space-x-6 mb-4 text-3xl">
-            <a href="https://github.com/harmanbajwa2954" class="hover:text-white transition-colors"><i
+            <a target="_blank" href="https://github.com/harmanbajwa2954" class="hover:text-white transition-colors"><i
                     class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/harmanpreetsingh2005" class="hover:text-blue-500 transition-colors"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://instagram.com/_harman__bajwa_" class="hover:text-pink-500 transition-colors"><i
-                    class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://linkedin.com/in/harmanpreetsingh2005"
+                class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://instagram.com/_harman__bajwa_"
+                class="hover:text-pink-500 transition-colors"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; 2026 Harmanpreet Singh. All rights reserved.</p>
     </footer>
