@@ -9,16 +9,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: { primary: '#0ea5e9', secondary: '#10b981', dark: '#0f172a' }
-                }
-            }
-        }
-    </script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0ea5e9;
+        --color-secondary: #10b981;
+        --color-dark: #0f172a;
+        --fontFamily-sans: 'Inter', sans-serif;
+      }
+    </style>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -45,18 +43,18 @@
 
     <nav class="fixed w-full z-50 glass transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-around h-20">
+            <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
                     <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo" class="h-10 w-10 rounded-full"></a>
                 </div>
-                <div class="hidden md:block">
+                <div class="block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="index.html"
                             class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
                         <a href="project.html"
                             class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
                         <a href="about.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About Me</a>
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
                     </div>
                 </div>
             </div>
@@ -89,11 +87,11 @@
                 </p>
                 <div class="flex gap-4">
                     <a href="#projects"
-                        class="bg-primary border border-blue-600 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
+                        class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
                         View Work
                     </a>
                     <a href="#contact"
-                        class="bg-primary border border-blue-600 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg shadow-blue-500/30">
+                        class="border border-gray-500 hover:border-white text-white font-bold py-3 px-8 rounded-full transition-all">
                         Let's Talk
                     </a>
                 </div>
@@ -115,7 +113,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80"
+                        <img src="assets/stash.png"
                             alt="Finance Dashboard"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
@@ -134,7 +132,7 @@
 
                 <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80"
+                        <img src="assets/medicura.png"
                             alt="Medical App"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
@@ -146,22 +144,21 @@
                         </div>
                         <p class="text-gray-400 mb-4 text-sm">A full-stack medical appointment booking website bridging
                             patients with healthcare providers securely and efficiently.</p>
-                        <a href="#" class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
+                        <a href="https://github.com/harmanbajwa2954/medicura-appointment-booking.git" class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
                                 class="fab fa-github mr-2"></i>View Source</a>
                     </div>
                 </div>
 
                 <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80"
-                            alt="AI Analytics"
+                        <img src="assets/pristine.png"
+                            alt="python library"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">DataSight AI</h3>
-                            <span class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-purple-400">Python /
-                                ML</span>
+                            <h3 class="text-xl font-bold">Pristinizer - Python</h3>
+                            <span class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-purple-400">Python/Pandas</span>
                         </div>
                         <p class="text-gray-400 mb-4 text-sm">A predictive analytics engine leveraging data mining
                             techniques to identify patterns and provide actionable business insights.</p>
@@ -169,6 +166,13 @@
                                 class="fab fa-github mr-2"></i>View Source</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
+                    <a href="project.html"
+                        class="mt-12 inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-full transition-opacity">
+                        View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
             </div>
         </div>
     </section>
@@ -244,7 +248,7 @@
                     <textarea name="message" placeholder="Your Message" rows="4" required
                         class="w-full bg-gray-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary border border-gray-700"></textarea>
                     <button type="submit"
-                        class="w-full bg-gradient-to-r from-blue-400 to-violet-500 cursor-pointer hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
+                        class="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
                         Send Message <i class="fas fa-paper-plane ml-2"></i>
                     </button>
                 </form>
