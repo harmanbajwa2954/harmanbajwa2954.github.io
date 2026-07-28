@@ -1,389 +1,544 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Harmanpreet Singh</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projects | Harmanpreet Singh — AI & Full Stack Portfolio</title>
+    <meta name="description"
+        content="Explore 10+ projects by Harmanpreet Singh — from RoadSense AI (6 computer vision models) to NeuroScan AI, full-stack platforms, and open-source Python libraries.">
+    <meta name="author" content="Harmanpreet Singh">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Projects | Harmanpreet Singh">
+    <meta property="og:description"
+        content="Explore 10+ AI and Full Stack projects including RoadSense AI, NeuroScan AI, and production-ready web platforms.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harmanbajwa2954.github.io/project.html">
+    <meta property="og:image" content="https://harmanbajwa2954.github.io/assets/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Harmanpreet Singh">
+    <meta name="twitter:description" content="Explore 10+ AI and Full Stack projects.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://harmanbajwa2954.github.io/project.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLGPg8YJ04IY4YZ2DbiSRg+Af2Wm7aUy+FYZmc1haggNKGOfU6qQ3Aag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style type="text/tailwindcss">
-        @theme {
-        --color-primary: #0ea5e9;
-        --color-secondary: #10b981;
-        --color-dark: #0f172a;
-        --fontFamily-sans: 'Inter', sans-serif;
-      }
-    </style>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            overflow-x: hidden;
-        }
 
-        .glass {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .gradient-text {
-            background: linear-gradient(to right, #0ea5e9, #10b981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="antialiased">
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <nav class="fixed w-full z-50 glass transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-around h-20">
-                <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
-                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo"
-                            class="h-10 w-10 rounded-full"></a>
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo" aria-label="Harmanpreet Singh — Home">
+                    <img src="assets/logo.png" alt="Harmanpreet Singh" width="40" height="40" loading="eager">
+                </a>
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="project.html" class="active" aria-current="page">Projects</a>
+                    <a href="about.html">About</a>
                 </div>
-                <div class="block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="project.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="about.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    </div>
-                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" role="menu">
+            <a href="index.html" role="menuitem">Home</a>
+            <a href="project.html" class="active" role="menuitem">Projects</a>
+            <a href="about.html" role="menuitem">About</a>
         </div>
     </nav>
 
-    <section class="pt-32 pb-12 relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-10">
-            <div
-                class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary rounded-full mix-blend-multiply filter blur-[120px]">
+    <main id="main">
+        <!-- ======== PAGE HEADER ======== -->
+        <section class="page-header" aria-label="Page title">
+            <div class="page-header-bg" aria-hidden="true">
+                <div class="page-header-bg-blob"></div>
+            </div>
+            <div class="container" style="position: relative; z-index: 10; text-align: center;" data-aos="fade-up">
+                <h1 class="heading-xl" style="margin-bottom: 16px;">My <span class="gradient-text">Projects</span></h1>
+                <p class="text-muted" style="max-width: 640px; margin: 0 auto; font-size: 1.1rem;">
+                    A deep dive into my AI, machine learning, and full-stack projects — showcasing scalable architecture
+                    and real-world problem solving.
+                </p>
+            </div>
+        </section>
+
+        <!-- ======== PROJECTS ======== -->
+        <section class="section" style="padding-top: 0;" aria-label="All Projects">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- ===== ROADSENSE AI (Featured) ===== -->
+                    <article class="project-card project-featured glass-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="project-card-image project-card-image-lg">
+                            <div class="placeholder-image" aria-label="RoadSense AI project screenshot">
+                                <img src="assets/roadsense.png" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <div
+                                style="display: inline-block; padding: 4px 14px; background: rgba(14,165,233,0.12); border: 1px solid rgba(14,165,233,0.25); border-radius: 999px; font-size: 0.75rem; font-weight: 600; color: var(--color-primary); margin-bottom: 12px;">
+                                <i class="fas fa-star" aria-hidden="true"></i> Flagship Project
+                            </div>
+                            <h2 class="project-card-title project-card-title-lg">RoadSense AI</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge--secondary tech-badge">TensorFlow</span>
+                                <span class="tech-badge--purple tech-badge">OpenCV</span>
+                                <span class="tech-badge--indigo tech-badge">Flask</span>
+                                <span class="tech-badge--yellow tech-badge">CNN</span>
+                                <span class="tech-badge--green tech-badge">YOLO</span>
+                            </div>
+                            <p class="project-card-description" style="font-size: 1rem; margin-top: 8px;">
+                                An intelligent road safety platform integrating six computer vision models into one
+                                unified application. Features include driver drowsiness detection, traffic sign
+                                recognition, lane detection, pothole detection, emergency vehicle detection, and
+                                accident detection — all processing in real time.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> 6 CV Models · Real-time Processing ·
+                                Multi-model Fusion
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/RoadSense-AI---ATOA.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--primary">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Source Code
+                                </a>
+                                <a href="https://harmanbajwa-roadsense-ai.hf.space" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--primary">
+                                    <i class="fas fa-file-lines" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== NEUROSCAN AI ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/braintumor.png"
+                                alt="NeuroScan AI — Brain tumor MRI classification interface" width="600" height="256"
+                                loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">NeuroScan AI</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--indigo tech-badge">VGG16</span>
+                                <span class="tech-badge">Keras</span>
+                                <span class="tech-badge--purple tech-badge">Flask</span>
+                                <span class="tech-badge--secondary tech-badge">TensorFlow</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A web-based diagnostic assistant that rapidly classifies brain anomalies from MRI scans.
+                                Powered by a Flask backend and a fine-tuned VGG16 deep learning model, achieving 95%+
+                                classification accuracy across multiple tumor categories.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> 95%+ Accuracy · VGG16 Transfer Learning ·
+                                Real-time Inference
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/MRI_Brain_Tumor_Detection.git"
+                                    target="_blank" rel="noopener noreferrer" class="project-link project-link--indigo">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub Repo
+                                </a>
+                                <a href="https://harmanbajwa-neurascan-ai.hf.space" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--indigo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link project-link--indigo">
+                                    <i class="fas fa-file-lines" aria-hidden="true"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== VOLTSIGHT ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/voltsight.png" alt="VoltSight — Energy consumption prediction dashboard"
+                                width="600" height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">VoltSight</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--violet tech-badge">Scikit-Learn</span>
+                                <span class="tech-badge">Random Forest</span>
+                                <span class="tech-badge--purple tech-badge">Flask</span>
+                                <span class="tech-badge--secondary tech-badge">Python</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A production-ready Flask application that predicts monthly building energy consumption
+                                using a Scikit-Learn Random Forest pipeline. Features interactive visualization and
+                                accurate regression modeling.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> ML Pipeline · Regression Model ·
+                                Production Flask App
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/VoltSight.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--violet">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub Repo
+                                </a>
+                                <a href="https://harmanbajwa-voltsight.hf.space" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--violet">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== STASH ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/stash.png" alt="Stash — Personal finance tracking dashboard" width="600"
+                                height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Stash Finance Tracker</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge--secondary tech-badge">React</span>
+                                <span class="tech-badge--purple tech-badge">Supabase</span>
+                                <span class="tech-badge--indigo tech-badge">Tailwind</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A scalable personal finance tracking application built on Next.js. Features custom
+                                middleware routing for secure authentication, dynamic data visualization, and an
+                                intuitive dashboard for managing expenses and budgets.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Secure Auth · Real-time Analytics ·
+                                Interactive Charts
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/Stash.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--primary">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub Repo
+                                </a>
+                                <a href="https://stash-sage.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link project-link--primary">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== MEDICURA ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/medicura.png" alt="Medicura — Medical appointment booking platform"
+                                width="600" height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Medicura</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--secondary tech-badge">MongoDB</span>
+                                <span class="tech-badge">Express.js</span>
+                                <span class="tech-badge--indigo tech-badge">React</span>
+                                <span class="tech-badge--green tech-badge">Node.js</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A comprehensive medical appointment booking platform bridging healthcare providers and
+                                patients. Full MERN stack with secure data handling, real-time scheduling, and
+                                role-based access control.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> MERN Stack · Role-based Auth · Real-time
+                                Scheduling
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/medicura-appointment-booking.git"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="project-link project-link--secondary">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub Repo
+                                </a>
+                                <a href="https://medicura-appointment-booking.onrender.com" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--secondary">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== PRISTINIZER ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/pristine.png" alt="Pristinizer — Python data cleaning library" width="600"
+                                height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Pristinizer — Python Library</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--purple tech-badge">Python</span>
+                                <span class="tech-badge--yellow tech-badge">Pandas</span>
+                                <span class="tech-badge--secondary tech-badge">NumPy</span>
+                                <span class="tech-badge--indigo tech-badge">PyPI</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A lightweight Python package for automatic data cleaning, exploratory data analysis
+                                (EDA), and missing data visualization for Pandas DataFrames. Published on PyPI and
+                                available for pip install.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Published on PyPI · Open Source ·
+                                Automated EDA
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/Pristinizer-pyProject.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--purple">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Source Code
+                                </a>
+                                <a href="https://pypi.org/project/pristinizer/" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--purple">
+                                    <i class="fas fa-file-alt" aria-hidden="true"></i> Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== RAINFALL PREDICTION ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/rainfall.jpeg" alt="Rainfall prediction model visualization" width="600"
+                                height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Rainfall Prediction Model</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--yellow tech-badge">Python</span>
+                                <span class="tech-badge--secondary tech-badge">Scikit-Learn</span>
+                                <span class="tech-badge--purple tech-badge">Random Forest</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A machine learning model trained to predict rainfall based on current weather conditions
+                                using Random Forest Classifier, demonstrating strong predictive capabilities with
+                                feature engineering.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Random Forest · Feature Engineering ·
+                                Weather Data
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/Rainfall-Prediction-Model.git"
+                                    target="_blank" rel="noopener noreferrer" class="project-link project-link--yellow">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== PITSTOP ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/Screenshot 2026-02-28 181152.png"
+                                alt="PitStop — Vehicle information logging application" width="600" height="256"
+                                loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">PitStop</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--red tech-badge">Flask</span>
+                                <span class="tech-badge--yellow tech-badge">SQLite</span>
+                                <span class="tech-badge--purple tech-badge">Python</span>
+                                <span class="tech-badge">Jinja2</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A Flask application that logs vehicle information including service dates, next service
+                                due dates, fuel filling history, and mileage tracking with persistent SQLite storage.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Flask · SQLite · CRUD Operations
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/PitStop-Vehicle_info_log.git"
+                                    target="_blank" rel="noopener noreferrer" class="project-link project-link--red">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub Repo
+                                </a>
+                                <a href="https://pit-stop-r6yg.onrender.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link project-link--red">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== STROKE PREDICTION ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/stroke.png" alt="Stroke prediction model interface" width="600"
+                                height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Stroke Prediction</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--green tech-badge">XGBoost</span>
+                                <span class="tech-badge--secondary tech-badge">Scikit-Learn</span>
+                                <span class="tech-badge--yellow tech-badge">Python</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A classification model trained using XGBoost on the Stroke Dataset to predict stroke
+                                probability based on patient health data with feature importance analysis.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> XGBoost · Classification · Healthcare
+                                Analytics
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/Stroke_Prediction.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--green">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub Repo
+                                </a>
+                                <a href="https://huggingface.co/spaces/harmanbajwa/stroke_predictor" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--green">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== CAMPUS CONNECT ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/Screenshot 2025-05-01 112732.png"
+                                alt="Campus Connect — Department management system" width="600" height="256"
+                                loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Campus-Connect</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--pink tech-badge">Flutter</span>
+                                <span class="tech-badge--orange tech-badge">Firebase</span>
+                                <span class="tech-badge--indigo tech-badge">Dart</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A Flutter-based Department Management System for universities — streamlining academic
+                                administration for teachers, students, and HODs with Firebase real-time data,
+                                authentication, and cloud storage.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Flutter · Firebase Auth · Real-time
+                                Database
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/CampusConnect-Department-Management-.git"
+                                    target="_blank" rel="noopener noreferrer" class="project-link project-link--pink">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== SPOTIFY CLONE ===== -->
+                    <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="project-card-image project-card-image-lg">
+                            <img src="assets/spotify.png" alt="Spotify Clone — Music player interface" width="600"
+                                height="256" loading="lazy">
+                        </div>
+                        <div class="project-card-body project-card-body-lg">
+                            <h2 class="project-card-title project-card-title-lg">Spotify Clone</h2>
+                            <div class="tech-badges" style="margin-top: 12px;">
+                                <span class="tech-badge--violet tech-badge">HTML</span>
+                                <span class="tech-badge--primary tech-badge">CSS</span>
+                                <span class="tech-badge--yellow tech-badge">JavaScript</span>
+                            </div>
+                            <p class="project-card-description" style="margin-top: 8px;">
+                                A Spotify UI clone built with pure HTML, CSS, and JavaScript — featuring functional
+                                music playback, responsive design, and pixel-perfect recreation of the Spotify
+                                interface.
+                            </p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Pure HTML/CSS/JS · Music Playback ·
+                                Responsive UI
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/Spotify-Clone.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--violet">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Source Code
+                                </a>
+                                <a href="https://harmanbajwa2954.github.io/Spotify-Clone/" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--violet">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-links" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="project.html">Projects</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/harmanpreetsingh2005" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://instagram.com/_harman__bajwa_" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">Built with <span style="color: var(--color-red);" aria-label="love">❤</span>
+                    by Harmanpreet Singh · &copy; 2026</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">My <span class="gradient-text">Projects</span></h1>
-            <p class="text-gray-400 max-w-2xl mx-auto text-lg">A deep dive into my full-stack web development python and
-                machine learning
-                projects, showcasing scalable architecture and real-world problem solving.</p>
-        </div>
-    </section>
-
-    <section class="pb-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-10">
-
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/braintumor.png" alt="Neuroscan screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">NeuroScan AI</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-indigo-500 border border-gray-700">VGG16/Keras/Flask</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">NeuroScan AI is a web-based diagnostic assistant that rapidly classifies brain anomalies from MRI scans. Powered by a Flask backend and a fine-tuned VGG16 deep learning model.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/MRI_Brain_Tumor_Detection.git" target="_blank"
-                                class="text-indigo-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
-
-                            <a href="https://harmanbajwa-neurascan-ai.hf.space" target="_blank"
-                                class="text-indigo-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i>Live Demo</a>
-
-                                    <!-- <p class="text-red-500">Under Development!</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/voltsight.png" alt="VoltSight screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">VoltSight</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-violet-500 border border-gray-700">Regression/Flask</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A production-ready Flask application that predicts monthly building energy consumption using a Scikit-Learn Random Forest pipeline.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/VoltSight.git" target="_blank"
-                                class="text-violet-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
-
-                            <a href="https://harmanbajwa-voltsight.hf.space" target="_blank"
-                                class="text-violet-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i>Live Demo</a>
-
-                                    <!-- <p class="text-red-500">Under Development!</p> -->
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/stash.png" alt="stash finance tracker screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Stash Finance Tracker</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-primary border border-gray-700">Next.js</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A scalable personal finance tracking application
-                            built entirely on the Next.js framework. Features custom middleware routing for secure
-                            authentication, dynamic data visualization, and an intuitive dashboard for managing expenses
-                            and budgets.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="#"
-                                class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
-
-                            <a href="https://stash-sage.vercel.app/" target="_blank"
-                                class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/medicura.png"
-                            alt="    medicura medical appointment booking platform screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Medicura</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-secondary border border-gray-700">MERN
-                                    Stack</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A comprehensive medical appointment booking
-                            platform bridging the gap between healthcare providers and patients. Built using MongoDB,
-                            Express.js, React, and Node.js, ensuring secure data handling and real-time scheduling
-                            capabilities.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/medicura-appointment-booking.git"
-                                target="_blank"
-                                class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
-                            <a href="https://medicura-appointment-booking.onrender.com" target="_blank"
-                                class="text-secondary hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/pristine.png" alt="    pristinizer data cleaning library screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Pristinizer - Library</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-purple-400 border border-gray-700">Python|Pandas</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">Pristinizer is a lightweight Python package for
-                            automatic data cleaning, exploratory data analysis (EDA), and missing data visualization for
-                            pandas DataFrames.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/Pristinizer-pyProject.git" target="_blank"
-                                class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> Source Code</a>
-                            <a href="https://pypi.org/project/pristinizer/" target="_blank"
-                                class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas far fa-file-alt mr-2"></i> Documentation</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden group transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/rainfall.jpeg" alt="rainfall prediction model screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Rainfall Prediction Model</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-yellow-400 border border-gray-700">Python
-                                    / ML</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">Trained a Machine Learning Model that predicts the
-                            Rainfall on the basis of current weather conditions. The model uses Random Forest Classifier
-                            demonstrating strong predictive capabilities.</ </p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/Rainfall-Prediction-Model.git" target="_blank"
-                                class="text-yellow-400 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/Screenshot 2026-02-28 181152.png" alt="PITSTOP screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">PitStop</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-red-500 border border-gray-700">Flask/SQLite</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">PitStop is a simple application that logs information related to your vehicles like service date, next service due date, fuel filling date, mileage etc.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/PitStop-Vehicle_info_log.git" target="_blank"
-                                class="text-red-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
-
-                            <a href="https://pit-stop-r6yg.onrender.com" target="_blank"
-                                class="text-red-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i>Live Demo</a>
-
-                                    <!-- <p class="text-red-500">Under Development!</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="glass rounded-2xl overflow-hidden group  transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/stroke.png" alt="stroke screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Stroke Prediction</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-green-500 border border-gray-700">ScikitLearn/XGBoost</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A Simple Classification Model trained using XGBoost Classification on the Stroke Dataset.</p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/Stroke_Prediction.git" target="_blank"
-                                class="text-green-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> GitHub Repo</a>
-
-                            <a href="https://huggingface.co/spaces/harmanbajwa/stroke_predictor" target="_blank"
-                                class="text-green-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i>Live Demo</a>
-
-                                    <!-- <p class="text-green-500">Under Development!</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="glass rounded-2xl overflow-hidden group transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/Screenshot 2025-05-01 112732.png"
-                            alt=" campus connect department management system screenshot"
-                            class="object-fill h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Campus-Connect</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-pink-400 border border-gray-700">Flutter</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">A Flutter-based Department Management System
-                            designed for colleges or universities to streamline academic administration for teachers,
-                            students, and HODs. It leverages Firebase for real-time data handling, authentication, and
-                            storage.</ </p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/CampusConnect-Department-Management-.git"
-                                target="_blank"
-                                class="text-pink-400 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass rounded-2xl overflow-hidden group transition-transform duration-500"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <div class="relative overflow-hidden h-64 bg-gray-800 flex items-center justify-center">
-                        <img src="assets/spotify.png"
-                            alt=" campus connect department management system screenshot"
-                            class="object-fit h-full w-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl font-bold">Spotify Clone</h3>
-                            <div class="flex gap-2">
-                                <span
-                                    class="text-xs font-semibold bg-gray-800 px-3 py-1 rounded-full text-violet-500 border border-gray-700">HTML/CSS/JS</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-6 leading-relaxed">This is Spotify Clone made using HTML, CSS, and Javascript only, that also plays music. This project was made purely for practice of UI/UX designing and Javascript functionalities. The Clone is hosted on GitHub Pages.</ </p>
-                        <div class="flex gap-4 border-t border-gray-700 pt-6">
-                            <a href="https://github.com/harmanbajwa2954/Spotify-Clone.git"
-                                target="_blank"
-                                class="text-violet-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fab fa-github mr-2"></i> Source Code</a>
-                            <a href="https://harmanbajwa2954.github.io/Spotify-Clone/" target="_blank"
-                                class="text-violet-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                    class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-8 border-t border-gray-800 text-center text-gray-400">
-        <div class="flex justify-center space-x-6 mb-4 text-3xl">
-            <a target="_blank" href="https://github.com/harmanbajwa2954" class="hover:text-white transition-colors"><i
-                    class="fab fa-github"></i></a>
-            <a target="_blank" href="https://linkedin.com/in/harmanpreetsingh2005"
-                class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://instagram.com/_harman__bajwa_"
-                class="hover:text-pink-500 transition-colors"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2026 Harmanpreet Singh. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // AOS Init
         AOS.init({ once: true, offset: 50, duration: 800 });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('open');
+                mobileBtn.setAttribute('aria-expanded', isOpen);
+                mobileBtn.querySelector('i').className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+            });
+        }
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
     </script>
 </body>
 

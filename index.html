@@ -1,306 +1,676 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Harmanpreet Singh, a Computer Science Engineer specializing in web development and machine learning.">
-    <title>Harmanpreet Singh | Full Stack & AI Developer</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Harmanpreet Singh | AI Engineer & Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Harmanpreet Singh — AI Engineer & Full Stack Developer specializing in Computer Vision, Machine Learning, and scalable web applications. 10+ projects with production-ready AI models.">
+    <meta name="keywords"
+        content="AI Engineer, Full Stack Developer, Machine Learning, Computer Vision, Python, React, Portfolio">
+    <meta name="author" content="Harmanpreet Singh">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Harmanpreet Singh | AI Engineer & Full Stack Developer">
+    <meta property="og:description"
+        content="AI Engineer & Full Stack Developer building intelligent, scalable applications. Explore 10+ projects spanning Computer Vision, ML, and Full Stack.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harmanbajwa2954.github.io/">
+    <meta property="og:image" content="https://harmanbajwa2954.github.io/assets/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harmanpreet Singh | AI Engineer & Full Stack Developer">
+    <meta name="twitter:description"
+        content="AI Engineer & Full Stack Developer building intelligent, scalable applications.">
+    <meta name="twitter:image" content="https://harmanbajwa2954.github.io/assets/logo.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://harmanbajwa2954.github.io/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLGPg8YJ04IY4YZ2DbiSRg+Af2Wm7aUy+FYZmc1haggNKGOfU6qQ3Aag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style type="text/tailwindcss">
-        @theme {
-        --color-primary: #0ea5e9;
-        --color-secondary: #10b981;
-        --color-dark: #0f172a;
-        --fontFamily-sans: 'Inter', sans-serif;
-      }
-    </style>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            overflow-x: hidden;
-        }
 
-        .glass {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 
-        .gradient-text {
-            background: linear-gradient(to right, #0ea5e9, #10b981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Harmanpreet Singh",
+        "url": "https://harmanbajwa2954.github.io",
+        "jobTitle": "AI Engineer & Full Stack Developer",
+        "alumniOf": "B.Tech Computer Science Engineering",
+        "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Computer Vision", "Full Stack Development", "Python", "JavaScript"],
+        "sameAs": [
+            "https://github.com/harmanbajwa2954",
+            "https://linkedin.com/in/harmanpreetsingh2005"
+        ]
+    }
+    </script>
 </head>
 
-<body class="antialiased">
+<body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <nav class="fixed w-full z-50 glass transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
-                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo"
-                            class="h-10 w-10 rounded-full"></a>
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo" aria-label="Harmanpreet Singh — Home">
+                    <img src="assets/logo.png" alt="Harmanpreet Singh" width="40" height="40" loading="eager">
+                </a>
+                <div class="navbar-links">
+                    <a href="index.html" class="active" aria-current="page">Home</a>
+                    <a href="project.html">Projects</a>
+                    <a href="about.html">About</a>
                 </div>
-                <div class="block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="project.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="about.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    </div>
-                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" role="menu">
+            <a href="index.html" class="active" role="menuitem">Home</a>
+            <a href="project.html" role="menuitem">Projects</a>
+            <a href="about.html" role="menuitem">About</a>
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-20">
-            <div
-                class="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-pulse">
-            </div>
-            <div class="absolute top-40 right-10 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
-                style="animation-delay: 2s;"></div>
-        </div>
+    <main id="main">
+        <!-- ======== HERO SECTION ======== -->
+        <section class="hero" id="home" aria-label="Introduction">
+            <div class="hero-bg-blob hero-bg-blob--primary" aria-hidden="true"></div>
+            <div class="hero-bg-blob hero-bg-blob--secondary" aria-hidden="true"></div>
 
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center w-full">
-            <div data-aos="fade-right" data-aos-duration="1000">
-                <p class="text-primary font-semibold tracking-wide uppercase mb-3">Welcome to my universe</p>
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-2">
-                    Hi, I'm <br><span class="gradient-text">Harmanpreet Singh</span>
-                </h1>
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-300 mb-6 h-10">
-                    I am <span id="dynamic-text" class="text-primary border-r-2 border-primary pr-1 animate-pulse">a
-                        Developer</span>
-                </h2>
-                <p class="text-xl text-gray-400 mb-8 leading-relaxed">
-                    I build intelligent, scalable applications bridging the gap between cutting-edge AI and intuitive
-                    user experiences.
-                </p>
-                <div class="flex gap-4">
-                    <a href="#projects"
-                        class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg shadow-blue-500/30">
-                        View Work
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left: Content -->
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <p class="hero-tag">AI Engineer · Full Stack Developer · CS Graduate</p>
+                        <h1 class="heading-xl hero-title">
+                            Hi, I'm <br><span class="gradient-text">Harmanpreet Singh</span>
+                        </h1>
+                        <h2 class="hero-subtitle">
+                            I am <span id="dynamic-text" class="hero-typing" aria-label="Rotating roles"></span>
+                        </h2>
+                        <p class="hero-description">
+                            I build intelligent, scalable applications that bridge cutting-edge AI with intuitive user
+                            experiences — from computer vision models achieving 95%+ accuracy to full-stack platforms
+                            serving real users.
+                        </p>
+
+                        <!-- Stats -->
+                        <div class="hero-stats" aria-label="Key achievements">
+                            <div class="hero-stat">
+                                <div class="hero-stat-number" data-count="10">0+</div>
+                                <div class="hero-stat-label">Projects Built</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-number" data-count="95">0%+</div>
+                                <div class="hero-stat-label">Model Accuracy</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-number" data-count="5">0+</div>
+                                <div class="hero-stat-label">Live Deployments</div>
+                            </div>
+                        </div>
+
+                        <!-- CTAs -->
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-rocket" aria-hidden="true"></i> View Projects
+                            </a>
+                            <a href="https://drive.google.com/file/d/1hnK3HrBRxIzJ7M46rB5Ewp2eRNaZ0cEt/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i class="fas fa-download" aria-hidden="true"></i> Resume
+                            </a>
+                            <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-icon" aria-label="GitHub Profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/harmanpreetsingh2005" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Profile Photo -->
+                    <div data-aos="fade-left" data-aos-duration="1000" class="hero-photo-wrapper" aria-hidden="true">
+                        <div class="hero-photo-ring"></div>
+                        <div class="hero-photo-ring hero-photo-ring--inner"></div>
+                        <div class="hero-photo-glow"></div>
+                        <img src="assets/1770140519138.jpg" alt="Harmanpreet Singh — AI Engineer & Full Stack Developer"
+                            class="hero-photo" width="320" height="320" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== FEATURED ACHIEVEMENT ======== -->
+        <section class="section" id="featured" aria-label="Featured Achievement">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Featured <span class="text-secondary">Achievement</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="featured-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-card-badge">
+                        <i class="fas fa-trophy" aria-hidden="true"></i> Flagship AI Project
+                    </div>
+                    <h3 class="featured-card-title">RoadSense AI — Intelligent Road Safety Platform</h3>
+                    <p class="featured-card-description">
+                        Developed RoadSense AI, an intelligent road safety platform integrating multiple computer vision
+                        models — including lane detection, pothole detection, traffic sign recognition, driver
+                        drowsiness detection, emergency vehicle detection, and accident detection — into one unified
+                        application.
+                    </p>
+                    <div class="featured-features">
+                        <div class="featured-feature" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-eye-slash" aria-hidden="true"></i>
+                            <span>Drowsiness Detection</span>
+                        </div>
+                        <div class="featured-feature" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="fas fa-sign-hanging" aria-hidden="true"></i>
+                            <span>Traffic Signs</span>
+                        </div>
+                        <div class="featured-feature" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-road" aria-hidden="true"></i>
+                            <span>Lane Detection</span>
+                        </div>
+                        <div class="featured-feature" data-aos="zoom-in" data-aos-delay="250">
+                            <i class="fas fa-circle-exclamation" aria-hidden="true"></i>
+                            <span>Pothole Detection</span>
+                        </div>
+                        <div class="featured-feature" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fas fa-truck-medical" aria-hidden="true"></i>
+                            <span>Emergency Vehicles</span>
+                        </div>
+                        <div class="featured-feature" data-aos="zoom-in" data-aos-delay="350">
+                            <i class="fas fa-car-burst" aria-hidden="true"></i>
+                            <span>Accident Detection</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="project.html" class="btn btn-gradient btn-sm">
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i> View Case Study
+                        </a>
+                        <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-sm">
+                            <i class="fab fa-github" aria-hidden="true"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== ABOUT PREVIEW ======== -->
+        <section class="section section-dark" id="about-preview" aria-label="About me">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>About <span class="text-primary">Me</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h3 class="heading-md" style="margin-bottom: 20px;">CS Graduate Turning Ideas into Intelligent
+                            Software</h3>
+                        <p class="text-muted" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                            I'm a Computer Science Engineering graduate from Punjab with a deep-rooted passion for
+                            Artificial Intelligence and building things that matter. My journey began with curiosity
+                            about how machines learn — and quickly grew into building production-grade AI systems and
+                            full-stack platforms.
+                        </p>
+                        <p class="text-muted" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+                            From training deep learning models for medical diagnostics to building finance trackers and
+                            open-source Python libraries, I thrive at the intersection of AI research and practical
+                            software engineering.
+                        </p>
+                        <a href="about.html" class="btn btn-outline">
+                            Read Full Story <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <!-- Code Editor Widget -->
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="code-editor" role="img" aria-label="Developer profile represented as code">
+                            <div class="code-editor-dots" aria-hidden="true">
+                                <div class="code-editor-dot code-editor-dot--red"></div>
+                                <div class="code-editor-dot code-editor-dot--yellow"></div>
+                                <div class="code-editor-dot code-editor-dot--green"></div>
+                            </div>
+                            <div>
+                                <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br>
+                                <span class="code-indent"><span class="code-key">name:</span> <span
+                                        class="code-string">'Harmanpreet Singh'</span>,</span><br>
+                                <span class="code-indent"><span class="code-key">education:</span> <span
+                                        class="code-string">'B.Tech CSE'</span>,</span><br>
+                                <span class="code-indent"><span class="code-key">role:</span> <span
+                                        class="code-string">'AI Engineer & Full Stack Dev'</span>,</span><br>
+                                <span class="code-indent"><span class="code-key">skills:</span> [<span
+                                        class="code-string">'Python'</span>, <span class="code-string">'MERN'</span>,
+                                    <span class="code-string">'AI/ML'</span>, <span
+                                        class="code-string">'CV'</span>],</span><br>
+                                <span class="code-indent"><span class="code-key">passion:</span> <span
+                                        class="code-string">'Solving real-world problems'</span></span><br>
+                                };
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== FEATURED PROJECTS ======== -->
+        <section class="section" id="projects" aria-label="Featured Projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Featured <span class="text-secondary">Projects</span></h2>
+                    <p>A showcase of scalable web platforms and intelligent systems I've developed.</p>
+                </div>
+
+                <div class="projects-grid projects-grid-3">
+                    <!-- RoadSense AI -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="project-card-image">
+                            <img src="assets/roadsense.png"
+                                alt="RoadSense AI — Intelligent road safety platform with computer vision overlays"
+                                width="400" height="200" loading="lazy">
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title">RoadSense AI</h3>
+                            </div>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge--secondary tech-badge">TensorFlow</span>
+                                <span class="tech-badge--purple tech-badge">OpenCV</span>
+                                <span class="tech-badge--indigo tech-badge">Flask</span>
+                            </div>
+                            <p class="project-card-description">Unified road safety platform integrating 6 computer
+                                vision models for real-time driver & road analysis.</p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> 6 CV Models · Real-time Processing
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/RoadSense-AI---ATOA.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--primary">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                                <a href="https://harmanbajwa-roadsense-ai.hf.space" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--primary">
+                                    <i class="fas fa-file-lines" aria-hidden="true"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NeuroScan AI -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card-image">
+                            <img src="assets/braintumor.png"
+                                alt="NeuroScan AI — Brain tumor MRI classification interface" width="400" height="200"
+                                loading="lazy">
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title">NeuroScan AI</h3>
+                            </div>
+                            <div class="tech-badges">
+                                <span class="tech-badge--indigo tech-badge">VGG16</span>
+                                <span class="tech-badge">Keras</span>
+                                <span class="tech-badge--purple tech-badge">Flask</span>
+                            </div>
+                            <p class="project-card-description">Web diagnostic assistant classifying brain anomalies
+                                from MRI scans using a fine-tuned VGG16 deep learning model.</p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> 95%+ Classification Accuracy
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/MRI_Brain_Tumor_Detection.git"
+                                    target="_blank" rel="noopener noreferrer" class="project-link project-link--indigo">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                                <a href="https://harmanbajwa-neurascan-ai.hf.space" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--indigo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Stash -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card-image">
+                            <img src="assets/stash.png" alt="Stash — Personal finance tracking dashboard" width="400"
+                                height="200" loading="lazy">
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-header">
+                                <h3 class="project-card-title">Stash Finance</h3>
+                            </div>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge--secondary tech-badge">React</span>
+                                <span class="tech-badge--purple tech-badge">Supabase</span>
+                            </div>
+                            <p class="project-card-description">Full-stack finance tracker with secure middleware
+                                routing, interactive data visualization, and budget management.</p>
+                            <div class="project-card-metric">
+                                <i class="fas fa-bolt" aria-hidden="true"></i> Real-time Analytics · Secure Auth
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/harmanbajwa2954/Stash.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link project-link--primary">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                                <a href="https://stash-sage.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link project-link--primary">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="300">
+                    <a href="project.html" class="btn btn-gradient">
+                        View All Projects <i class="fas fa-arrow-right" aria-hidden="true"></i>
                     </a>
-                    <a href="https://drive.google.com/file/d/1hnK3HrBRxIzJ7M46rB5Ewp2eRNaZ0cEt/view?usp=sharing"
-                        target="_blank"
-                        class="bg-gray-800 hover:bg-gray-700 text-white py-3 px-6 rounded-lg transition-colors border border-gray-600 flex items-center">
-                        <i class="fas fa-download mr-2"></i> Download Resume
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== TECHNICAL SKILLS ======== -->
+        <section class="section section-dark" id="skills" aria-label="Technical Skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Technical <span class="text-primary">Arsenal</span></h2>
+                    <p>Mastery across the modern stack, from building robust backends to training predictive AI models.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="50">
+                        <div class="skill-category-icon text-primary"><i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-category-icon text-secondary"><i class="fas fa-palette"
+                                aria-hidden="true"></i></div>
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">HTML5</span>
+                            <span class="skill-pill">CSS3</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">Next.js</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skill-category-icon text-green"><i class="fas fa-server" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Flask</span>
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">Express</span>
+                        </div>
+                    </div>
+
+                    <!-- AI / ML -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-category-icon text-purple"><i class="fas fa-brain" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="skill-category-title">Artificial Intelligence</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">TensorFlow</span>
+                            <span class="skill-pill">Keras</span>
+                            <span class="skill-pill">OpenCV</span>
+                            <span class="skill-pill">Scikit-Learn</span>
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">Pandas</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="250">
+                        <div class="skill-category-icon text-orange"><i class="fas fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="skill-category-title">Databases</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Firebase</span>
+                            <span class="skill-pill">MongoDB</span>
+                            <span class="skill-pill">Supabase</span>
+                            <span class="skill-pill">SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-category-icon text-yellow"><i class="fas fa-wrench" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="skill-category-title">Tools</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Android Studio</span>
+                            <span class="skill-pill">Postman</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="350">
+                        <div class="skill-category-icon text-teal"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+                        <h3 class="skill-category-title">Cloud & Deployment</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Vercel</span>
+                            <span class="skill-pill">GitHub Pages</span>
+                            <span class="skill-pill">Hugging Face</span>
+                            <span class="skill-pill">Render</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== GITHUB SECTION ======== -->
+        <section class="section" id="github" aria-label="GitHub Activity">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>GitHub <span class="text-primary">Activity</span></h2>
+                    <p>Open-source contributions and coding activity.</p>
+                </div>
+
+                <div class="github-stats" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Contribution Graph -->
+                    <div class="github-contrib">
+                        <img src="https://ghchart.rshah.org/0ea5e9/harmanbajwa2954"
+                            alt="Harmanpreet Singh's GitHub Contribution Graph" loading="lazy">
+                    </div>
+
+                    <!-- Stats Row -->
+                    <div class="github-stats-row">
+                        <img src="https://github-readme-stats.vercel.app/api?username=harmanbajwa2954&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=0ea5e9&icon_color=10b981&text_color=94a3b8"
+                            alt="Harmanpreet's GitHub Stats" loading="lazy">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=harmanbajwa2954&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=0ea5e9&text_color=94a3b8"
+                            alt="Top Languages" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CONTACT ======== -->
+        <section class="section section-dark" id="contact" aria-label="Contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Let's <span class="text-primary">Connect</span></h2>
+                    <p>Looking for a developer, AI specialist, or collaborator? Let's talk.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-info-list">
+                            <a href="mailto:harmanbajwa2954@gmail.com" class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-info-label">Email</div>
+                                    <div class="contact-info-value">harmanbajwa2954@gmail.com</div>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/harmanpreetsingh2005" target="_blank"
+                                rel="noopener noreferrer" class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-info-label">LinkedIn</div>
+                                    <div class="contact-info-value">Harmanpreet Singh</div>
+                                </div>
+                            </a>
+                            <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                                class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-info-label">GitHub</div>
+                                    <div class="contact-info-value">harmanbajwa2954</div>
+                                </div>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1hnK3HrBRxIzJ7M46rB5Ewp2eRNaZ0cEt/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-info-label">Resume</div>
+                                    <div class="contact-info-value">Download PDF</div>
+                                </div>
+                            </a>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-info-label">Location</div>
+                                    <div class="contact-info-value">Punjab, India</div>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-info-label">Response Time</div>
+                                    <div class="contact-info-value">Within 24 hours</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <div class="contact-form-wrapper">
+                            <h3 class="heading-sm" style="margin-bottom: 24px;">Send a Message</h3>
+                            <form action="https://formspree.io/f/xbdaakpj" method="POST">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-name" class="form-label">Name</label>
+                                        <input type="text" id="contact-name" name="name" placeholder="Your Name"
+                                            required class="form-input" autocomplete="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-email" class="form-label">Email</label>
+                                        <input type="email" id="contact-email" name="email" placeholder="Your Email"
+                                            required class="form-input" autocomplete="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message" class="form-label">Message</label>
+                                    <textarea id="contact-message" name="message"
+                                        placeholder="Tell me about your project or idea…" rows="5" required
+                                        class="form-textarea"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-gradient" style="width: 100%;">
+                                    Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-links" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="project.html">Projects</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/harmanpreetsingh2005" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://instagram.com/_harman__bajwa_" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
-            </div>
-
-            <!-- profile picture -->
-            <div data-aos="fade-left" data-aos-duration="1000"
-                class="hidden md:flex justify-center items-center relative w-96 h-96 mx-auto">
-                <div
-                    class="absolute inset-0 rounded-full border-y-4 border-primary border-dashed animate-[spin_10s_linear_infinite] opacity-70">
-                </div>
-                <div
-                    class="absolute inset-4 rounded-full border-x-4 border-secondary animate-[spin_7s_linear_infinite_reverse] opacity-70">
-                </div>
-                <div
-                    class="absolute inset-10 rounded-full bg-gradient-to-tr from-primary to-secondary blur-2xl opacity-20 animate-pulse">
-                </div>
-                <img src="assets/1770140519138.jpg" alt="Harmanpreet Singh"
-                    class="relative z-10 w-80 h-80 object-cover rounded-full shadow-[0_0_20px_rgba(14,165,233,0.5)] border-4 border-[#0f172a] transform hover:scale-105 transition-transform duration-500">
-
+                <p class="footer-copyright">Built with <span style="color: var(--color-red);" aria-label="love">❤</span>
+                    by Harmanpreet Singh · &copy; 2026</p>
             </div>
         </div>
-    </section>
-
-    <section id="projects" class="py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl font-bold mb-4">Featured <span class="text-secondary">Projects</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">A showcase of scalable web platforms and intelligent systems
-                    I've developed.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Brain Tumor -->
-                <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="assets/braintumor.png" alt="Neuroscan screenshot"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">NeuroScan AI</h3>
-                            <span
-                                class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-primary">Keras/CNN</span>
-                        </div>
-                        <p class="text-gray-400 mb-4 text-sm">NeuroScan AI is a web-based diagnostic assistant that
-                            rapidly classifies brain anomalies from MRI scans. Powered by a Flask backend and a
-                            fine-tuned VGG16 deep learning model</p>
-                        <a href="https://github.com/harmanbajwa2954/MRI_Brain_Tumor_Detection.git" target="_blank"
-                            class="text-indigo-500 hover:text-white transition-colors text-sm font-semibold"><i
-                                class="fab fa-github mr-2"></i>View Source</a>
-                        <a href="https://harmanbajwa-neurascan-ai.hf.space" target="_blank"
-                            class="text-indigo-500 hover:text-white transition-colors font-semibold flex items-center"><i
-                                class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
-                    </div>
-                </div>
-                <!-- Stash -->
-                <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="assets/stash.png" alt="Finance Dashboard"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Stash</h3>
-                            <span
-                                class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-primary">Next.js</span>
-                        </div>
-                        <p class="text-gray-400 mb-4 text-sm">A comprehensive personal finance tracker built with
-                            Next.js, featuring secure middleware routing and interactive data visualization.</p>
-                        <a href="https://github.com/harmanbajwa2954/Stash.git" target="_blank"
-                            class="text-primary hover:text-white transition-colors text-sm font-semibold"><i
-                                class="fab fa-github mr-2"></i>View Source</a>
-                        <a href="https://stash-sage.vercel.app/" target="_blank"
-                            class="text-primary hover:text-white transition-colors font-semibold flex items-center"><i
-                                class="fas fa-external-link-alt mr-2"></i> Live Demo</a>
-                    </div>
-                </div>
-                <!-- Pristinizer -->
-                <div class="glass rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="assets/pristine.png" alt="python library"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Pristinizer - Python</h3>
-                            <span
-                                class="text-xs font-semibold bg-gray-800 px-2 py-1 rounded text-purple-400">Python/Pandas</span>
-                        </div>
-                        <p class="text-gray-400 mb-4 text-sm">A predictive analytics engine leveraging data mining
-                            techniques to identify patterns and provide actionable business insights.</p>
-                        <a href="https://github.com/harmanbajwa2954/Pristinizer-pyProject.git" target="_blank"
-                            class="text-purple-400 hover:text-white transition-colors text-sm font-semibold"><i
-                                class="fab fa-github mr-2"></i>View Source</a>
-                        <a href="https://pypi.org/project/pristinizer/" target="_blank"
-                            class="text-purple-400 hover:text-white transition-colors font-semibold flex items-center"><i
-                                class="fas far fa-file-alt mr-2"></i> Documentation</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
-                <a href="project.html"
-                    class="mt-12 inline-block bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
-                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-24 bg-[#0b1121]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl font-bold mb-4">Technical <span class="text-primary">Arsenal</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Mastery across the modern stack, from building robust
-                    backends to training predictive AI models.</p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <i class="fab fab fa-node-js text-5xl text-green-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Node.js</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <i class="fab fab fab fa-react text-5xl text-blue-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">React.js</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <i class=" fas fa-chart-line text-5xl text-blue-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Data Analysis</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <i class="fab fa-python text-5xl text-yellow-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Python & Data Science</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-brain text-5xl text-purple-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Machine Learning</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <i class="fas fa-database text-5xl text-green-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Database Management</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <i class="fas fas fa-code-branch text-5xl text-yellow-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">C / C++</h3>
-                </div>
-                <div class="glass p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <i class="fas fab fab fa-github-square text-5xl text-grey-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">GitHub</h3>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 bg-[#0b1121] relative overflow-hidden">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" data-aos="zoom-in">
-            <div class="glass p-10 rounded-2xl border-t-4 border-t-primary shadow-2xl">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold mb-2">Let's Build Something</h2>
-                    <p class="text-gray-400">Looking for a developer, data analytics intern, or AI specialist?</p>
-                </div>
-                <form action="https://formspree.io/f/xbdaakpj" method="POST" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" name="name" placeholder="Your Name" required
-                            class="w-full bg-gray-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary border border-gray-700">
-                        <input type="email" name="email" placeholder="Your Email" required
-                            class="w-full bg-gray-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary border border-gray-700">
-                    </div>
-                    <textarea name="message" placeholder="Your Message" rows="4" required
-                        class="w-full bg-gray-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary border border-gray-700"></textarea>
-                    <button type="submit"
-                        class="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-opacity">
-                        Send Message <i class="fas fa-paper-plane ml-2"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-8 border-t border-gray-800 text-center text-gray-400">
-        <div class="flex justify-center space-x-6 mb-4 text-3xl">
-            <a target="_blank" href="https://github.com/harmanbajwa2954" class="hover:text-white transition-colors"><i
-                    class="fab fa-github"></i></a>
-            <a target="_blank" href="https://linkedin.com/in/harmanpreetsingh2005"
-                class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://instagram.com/_harman__bajwa_"
-                class="hover:text-pink-500 transition-colors"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2026 Harmanpreet Singh. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

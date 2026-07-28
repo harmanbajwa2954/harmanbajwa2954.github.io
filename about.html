@@ -1,157 +1,435 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Harmanpreet Singh</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>About | Harmanpreet Singh — AI Engineer & Full Stack Developer</title>
+    <meta name="description"
+        content="Learn about Harmanpreet Singh — a B.Tech CSE graduate passionate about AI, Computer Vision, and Full Stack Development. Explore my journey, timeline, experience, and certifications.">
+    <meta name="author" content="Harmanpreet Singh">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Harmanpreet Singh — AI Engineer & Developer">
+    <meta property="og:description"
+        content="CS Graduate building intelligent software — from computer vision systems to production web platforms.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://harmanbajwa2954.github.io/about.html">
+    <meta property="og:image" content="https://harmanbajwa2954.github.io/assets/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Harmanpreet Singh">
+    <meta name="twitter:description" content="CS Graduate building intelligent software.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://harmanbajwa2954.github.io/about.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLGPg8YJ04IY4YZ2DbiSRg+Af2Wm7aUy+FYZmc1haggNKGOfU6qQ3Aag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style type="text/tailwindcss">
-        @theme {
-        --color-primary: #0ea5e9;
-        --color-secondary: #10b981;
-        --color-dark: #0f172a;
-        --fontFamily-sans: 'Inter', sans-serif;
-      }
-    </style>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            overflow-x: hidden;
-        }
 
-        .glass {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .gradient-text {
-            background: linear-gradient(to right, #0ea5e9, #10b981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="antialiased">
-    <nav class="fixed w-full z-50 glass transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-around h-20">
-                <div class="flex-shrink-0  tracking-tighter hover:scale-105 transition-transform">
-                    <a href="index.html"><img src="assets/logo.png" alt="Harmanpreet Singh Logo"
-                            class="h-10 w-10 rounded-full"></a>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo" aria-label="Harmanpreet Singh — Home">
+                    <img src="assets/logo.png" alt="Harmanpreet Singh" width="40" height="40" loading="eager">
+                </a>
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="project.html">Projects</a>
+                    <a href="about.html" class="active" aria-current="page">About</a>
                 </div>
-                <div class="block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="project.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="about.html"
-                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    </div>
-                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" role="menu">
+            <a href="index.html" role="menuitem">Home</a>
+            <a href="project.html" role="menuitem">Projects</a>
+            <a href="about.html" class="active" role="menuitem">About</a>
         </div>
     </nav>
 
+    <main id="main">
+        <!-- ======== ABOUT HERO ======== -->
+        <section class="hero" style="min-height: auto; padding-top: 120px; padding-bottom: 48px;" aria-label="About me">
+            <div class="hero-bg-blob hero-bg-blob--primary" aria-hidden="true"></div>
+            <div class="hero-bg-blob hero-bg-blob--secondary" aria-hidden="true"></div>
 
-    <section class="min-h-screen pt-32 pb-24 relative overflow-hidden flex items-center">
-        <div class="absolute inset-0 z-0 opacity-10">
-            <div class="absolute top-40 left-20 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl">
-            </div>
-            <div
-                class="absolute bottom-10 right-20 w-96 h-96 bg-secondary rounded-full mix-blend-multiply filter blur-3xl">
-            </div>
-        </div>
+            <div class="container" style="position: relative; z-index: 10;">
+                <div class="section-header" data-aos="fade-up">
+                    <h1 class="heading-xl" style="margin-bottom: 12px;">About <span class="gradient-text">Me</span></h1>
+                    <div class="section-divider"></div>
+                </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">About <span class="gradient-text">Me</span></h1>
-                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-
-                <div data-aos="fade-left" data-aos-duration="1000" class="flex justify-center">
-                    <div
-                        class="bg-[#0b1121] rounded-xl border border-gray-700 p-6 md:p-8 font-mono text-sm md:text-base shadow-2xl leading-loose w-full transform hover:-translate-y-2 transition-transform duration-500 hover:shadow-[0_0_30px_rgba(14,165,233,0.2)]">
-                        <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                <div class="about-grid" style="margin-top: 48px;">
+                    <!-- Code Editor -->
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="code-editor" role="img" aria-label="Developer profile represented as code">
+                            <div class="code-editor-dots" aria-hidden="true">
+                                <div class="code-editor-dot code-editor-dot--red"></div>
+                                <div class="code-editor-dot code-editor-dot--yellow"></div>
+                                <div class="code-editor-dot code-editor-dot--green"></div>
+                            </div>
+                            <div>
+                                <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br>
+                                <span class="code-indent"><span class="code-key">name:</span> <span
+                                        class="code-string">'Harmanpreet Singh'</span>,</span><br>
+                                <span class="code-indent"><span class="code-key">education:</span> <span
+                                        class="code-string">'B.Tech CSE'</span>,</span><br>
+                                <span class="code-indent"><span class="code-key">role:</span> <span
+                                        class="code-string">'AI Engineer & Full Stack Dev'</span>,</span><br>
+                                <span class="code-indent"><span class="code-key">core_skills:</span> [<span
+                                        class="code-string">'MERN'</span>, <span
+                                        class="code-string">'Next.js'</span>,</span><br>
+                                <span class="code-indent" style="padding-left: 48px;"><span
+                                        class="code-string">'Python'</span>, <span
+                                        class="code-string">'AI/ML'</span>],</span><br>
+                                <span class="code-indent"><span class="code-key">interests:</span> [<span
+                                        class="code-string">'Computer Vision'</span>,</span><br>
+                                <span class="code-indent" style="padding-left: 48px;"><span class="code-string">'Machine
+                                        Learning'</span>],</span><br>
+                                <span class="code-indent"><span class="code-key">passion:</span> <span
+                                        class="code-string">'Building real-world solutions'</span></span><br>
+                                };
+                            </div>
                         </div>
-                        <div class="text-gray-300">
-                            <span class="text-purple-400 font-semibold">const</span> <span
-                                class="text-primary font-semibold">developer</span> = {<br>
-                            <span class="block pl-6">
-                                <span class="text-pink-400">name:</span> <span class="text-secondary">'Harmanpreet
-                                    Singh'</span>,<br>
-                                <span class="text-pink-400">education:</span> <span class="text-secondary">'B.Tech
-                                    CSE'</span>,<br>
-                                <span class="text-pink-400">role:</span> <span class="text-secondary">'Full Stack &
-                                    AI/ML Engineer'</span>,<br>
-                                <span class="text-pink-400">core_skills:</span> [<span
-                                    class="text-secondary">'MERN'</span>, <span class="text-secondary">'Next.js'</span>,
-                                <span class="text-secondary">'Python'</span>, <span
-                                    class="text-secondary">'AI'</span>],<br>
-                                <span class="text-pink-400">interests:</span> [<span class="text-secondary">'Artificial
-                                    Intelligence'</span>, <span class="text-secondary">'Machine Learning'</span>],<br>
-                                <span class="text-pink-400">passion:</span> <span class="text-secondary">'Building Real
-                                    World Projects'</span>
-                            </span>
-                            };
+                    </div>
+
+                    <!-- About Story -->
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <h2 class="heading-md" style="margin-bottom: 20px;">CS Graduate Turning Ideas into Intelligent
+                            Software</h2>
+                        <p class="text-muted" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                            I'm a Computer Science Engineering graduate from Punjab with a relentless passion for
+                            building technology that solves real problems. My journey began with a fascination for how
+                            machines can learn and perceive the world — leading me deep into Artificial Intelligence,
+                            Computer Vision, and full-stack engineering.
+                        </p>
+                        <p class="text-muted" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px;">
+                            My expertise spans from core CS fundamentals — Data Structures, Algorithms, Operating
+                            Systems — to building production platforms with the MERN stack and Next.js. After
+                            specialized AI/ML training at NIELIT Ropar, I've been bridging the gap between software
+                            development and predictive analytics, creating systems that don't just function, but
+                            <em>think</em>.
+                        </p>
+                        <p class="text-muted" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+                            Whether it's training a VGG16 model to detect brain tumors from MRI scans, building a
+                            unified road safety platform with 6 CV models, or publishing open-source Python packages —
+                            I'm driven by the belief that great engineering starts with understanding the problem
+                            deeply.
+                        </p>
+
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="https://drive.google.com/file/d/1hnK3HrBRxIzJ7M46rB5Ewp2eRNaZ0cEt/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+                            </a>
+                            <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-icon" aria-label="GitHub Profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/harmanpreetsingh2005" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div data-aos="fade-right" data-aos-duration="1000">
-                    <h2 class="text-3xl font-bold mb-6">B.Tech CSE Graduate & Tech Enthusiast</h2>
-                    <p class="text-gray-400 mb-6 leading-relaxed text-lg">
-                        I am a Computer Science Engineering professional based in Punjab, with a deep-rooted passion for
-                        building scalable web applications and exploring the depths of artificial intelligence.
-                    </p>
-                    <p class="text-gray-400 mb-6 leading-relaxed text-lg">
-                        My expertise spans from mastering core CS fundamentals—like Data Structures, Algorithms, and
-                        Operating Systems—to developing full-stack platforms using the MERN stack and Next.js. Recently,
-                        I've expanded my focus into Artificial Intelligence and Machine Learning, completing specialized
-                        training at NIELIT Ropar to bridge the gap between software development and predictive
-                        analytics.
-                    </p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="https://drive.google.com/file/d/1hnK3HrBRxIzJ7M46rB5Ewp2eRNaZ0cEt/view?usp=sharing" target="_blank"
-                            class="bg-gray-800 hover:bg-gray-700 text-white py-3 px-6 rounded-lg transition-colors border border-gray-600 flex items-center">
-                            <i class="fas fa-download mr-2"></i> Download Resume
-                        </a>
-                    </div>
+        <!-- ======== TIMELINE ======== -->
+        <section class="section section-dark" id="timeline" aria-label="Professional Timeline">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>My <span class="text-primary">Journey</span></h2>
+                    <p>From learning the fundamentals to building production AI systems.</p>
+                    <div class="section-divider"></div>
                 </div>
 
+                <div class="timeline">
+                    <!-- Education -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 – 2026</div>
+                            <h3 class="timeline-title"><i class="fas fa-graduation-cap text-primary" aria-hidden="true"
+                                    style="margin-right: 8px;"></i>B.Tech Computer Science Engineering</h3>
+                            <p class="timeline-description">
+                                Completed my bachelor's degree in Computer Science Engineering, mastering core subjects
+                                including Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks, and
+                                Software Engineering. Built a strong foundation for both systems programming and AI.
+                            </p>
+                        </div>
+                    </div>
 
+                    <!-- NIELIT -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jan 2026 – Jul 2026</div>
+                            <h3 class="timeline-title"><i class="fas fa-brain text-purple" aria-hidden="true"
+                                    style="margin-right: 8px;"></i>NIELIT Ropar — AI/ML Training</h3>
+                            <p class="timeline-description">
+                                Completed specialized training in Artificial Intelligence and Machine Learning at NIELIT
+                                Ropar. Gained hands-on experience with supervised/unsupervised learning, neural
+                                networks, computer vision, and model deployment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Major AI Projects -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 – 2026</div>
+                            <h3 class="timeline-title"><i class="fas fa-rocket text-secondary" aria-hidden="true"
+                                    style="margin-right: 8px;"></i>Major AI & Full-Stack Projects</h3>
+                            <p class="timeline-description">
+                                Built 10+ production-grade projects spanning AI/ML and full-stack development.
+                                Highlights include NeuroScan AI (brain tumor detection with 95%+ accuracy), RoadSense AI
+                                (6 computer vision models), Stash Finance (Next.js), Medicura (MERN), and Pristinizer
+                                (published Python library).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Current Learning -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Present</div>
+                            <h3 class="timeline-title"><i class="fas fa-book-open text-teal" aria-hidden="true"
+                                    style="margin-right: 8px;"></i>Continuous Learning</h3>
+                            <p class="timeline-description">
+                                Currently deepening expertise in advanced Computer Vision architectures, transformer
+                                models, and scalable cloud deployment. Exploring GenAI, LLM fine-tuning, and edge AI for
+                                real-time applications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Career Goals -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Future</div>
+                            <h3 class="timeline-title"><i class="fas fa-bullseye text-orange" aria-hidden="true"
+                                    style="margin-right: 8px;"></i>Career Goals</h3>
+                            <p class="timeline-description">
+                                Seeking to join innovative AI startups or top tech companies where I can apply my skills
+                                in AI engineering and full-stack development to build products that make a meaningful
+                                impact. Passionate about roles at the intersection of AI research and production
+                                engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== EXPERIENCE ======== -->
+        <section class="section" id="experience" aria-label="Experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Experience & <span class="text-secondary">Involvement</span></h2>
+                    <p>Academic projects, collaboration, and contributions that shaped my skills.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="experience-card-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+                        <h3 class="experience-card-title">Academic Projects</h3>
+                        <p class="experience-card-description">
+                            Built 10+ projects across AI, ML, and full-stack domains as part of coursework and
+                            self-directed learning. Each project targeted real-world problems — from healthcare
+                            diagnostics to financial management.
+                        </p>
+                    </div>
+
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="experience-card-icon"><i class="fas fa-chalkboard-user" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="experience-card-title">Presentations</h3>
+                        <p class="experience-card-description">
+                            Presented AI/ML projects including NeuroScan AI and RoadSense AI at academic showcases,
+                            explaining complex computer vision architectures to technical and non-technical audiences.
+                        </p>
+                    </div>
+
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="experience-card-icon"><i class="fas fa-flask" aria-hidden="true"></i></div>
+                        <h3 class="experience-card-title">Research</h3>
+                        <p class="experience-card-description">
+                            Explored transfer learning techniques (VGG16, ResNet), ensemble methods (XGBoost, Random
+                            Forest), and computer vision pipelines. Applied research findings directly in deployed
+                            applications.
+                        </p>
+                    </div>
+
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="experience-card-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+                        <h3 class="experience-card-title">Team Collaboration</h3>
+                        <p class="experience-card-description">
+                            Collaborated on multi-developer projects using Git workflows, code reviews, and agile
+                            practices. Campus-Connect and Medicura were built with team coordination and clear role
+                            delegation.
+                        </p>
+                    </div>
+
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="experience-card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                        <h3 class="experience-card-title">Open Source Contributions</h3>
+                        <p class="experience-card-description">
+                            Published the Pristinizer Python package on PyPI. Actively maintaining repositories on
+                            GitHub and exploring opportunities to contribute to larger open-source ML and developer tool
+                            projects.
+                        </p>
+                    </div>
+
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="experience-card-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+                        <h3 class="experience-card-title">Training & Workshops</h3>
+                        <p class="experience-card-description">
+                            Completed specialized AI/ML training at NIELIT Ropar. Attended workshops on cloud
+                            deployment, DevOps fundamentals, and modern frontend development frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CERTIFICATIONS ======== -->
+        <section class="section section-dark" id="certifications" aria-label="Certifications">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Certifications & <span class="text-primary">Credentials</span></h2>
+                    <p>Professional certifications and completed training programs.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="cert-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="cert-info-title">AI/ML Specialization</div>
+                            <div class="cert-info-issuer">NIELIT Ropar</div>
+                            <div class="cert-info-year">2026</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="cert-info-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</div>
+                            <div class="cert-info-issuer">Oracle</div>
+                            <div class="cert-info-year">Aug 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="cert-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="cert-info-title">Google Data Analytics Professional Certificate</div>
+                            <div class="cert-info-issuer">Coursera</div>
+                            <div class="cert-info-year">Jul 2024</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="cert-info-title">Python Essentials 1</div>
+                            <div class="cert-info-issuer">Cisco</div>
+                            <div class="cert-info-year">Jan 2026</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="cert-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="cert-info-title">Python Training</div>
+                            <div class="cert-info-issuer">Excellence Technology</div>
+                            <div class="cert-info-year">Jul 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-links" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="project.html">Projects</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/harmanpreetsingh2005" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://instagram.com/_harman__bajwa_" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">Built with <span style="color: var(--color-red);" aria-label="love">❤</span>
+                    by Harmanpreet Singh · &copy; 2026</p>
             </div>
         </div>
-    </section>
-
-    <footer class="py-8 border-t border-gray-800 text-center text-gray-400">
-        <div class="flex justify-center space-x-6 mb-4 text-3xl">
-            <a target="_blank" href="https://github.com/harmanbajwa2954" class="hover:text-white transition-colors"><i
-                    class="fab fa-github"></i></a>
-            <a target="_blank" href="https://linkedin.com/in/harmanpreetsingh2005"
-                class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://instagram.com/_harman__bajwa_"
-                class="hover:text-pink-500 transition-colors"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2026 Harmanpreet Singh. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // AOS Init
         AOS.init({ once: true, offset: 50, duration: 800 });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('open');
+                mobileBtn.setAttribute('aria-expanded', isOpen);
+                mobileBtn.querySelector('i').className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+            });
+        }
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
     </script>
 </body>
 

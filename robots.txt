@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://harmanbajwa2954.github.io/sitemap.xml
